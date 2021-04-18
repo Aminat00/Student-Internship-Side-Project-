@@ -1,0 +1,58 @@
+﻿body {
+    font-family: 'Belleza', sans-serif;
+    font-size: medium;
+}
+
+div#page {
+    width: 1000px;
+    border: solid 1px green;
+    height: auto;
+    margin: 0 auto;
+}
+
+header {
+    width: 97%;
+    border: 1px solid red;
+    margin: 1% auto;
+    height: 100px;
+    padding: 1%;
+}
+
+header .left{
+    width: 40%;
+    float: left;
+}
+
+header .left .logo{
+    width: 15%;
+    float: left;
+   
+}
+
+header .left .logo-text{ 
+    width: 18%;
+  
+    float: left;
+}
+
+
+header ul{
+    list-style-type:none;
+}
+
+div#content {
+    width: 96%;
+    border: 1px solid blue;
+    box-sizing: border-box;
+    min-height: 300px;
+    margin: 1% 1%;
+    padding: 1%;
+}
+
+footer {
+    width: 97%;
+    border: 1px solid red;
+    margin: 1% auto;
+    height: 70px;
+    padding: 1%;
+}

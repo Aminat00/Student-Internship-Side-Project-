@@ -1,0 +1,62 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="studentInternship.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Web Application</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="masterpage1.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Belleza&display=swap" rel="stylesheet">
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="page">
+            <header>
+                <div class="left">
+                    <div class="logo"><img src="imgs/dart.png" alt="Alternate Text" /> 
+                    <a href="Site1.Master">Internship</a></div>
+               
+                    <div class="logo-text"><p>he opportunities for a better future</p>
+                       </div>
+                    <a href="#">
+                    </a>
+                    
+                </div>
+                <div class="right">                
+                    <ul>
+                    <li><a href="WebForm3.aspx">Student form</a></li>
+                    <li><a href="Company.aspx">Company form</a></li>
+                    <li><a href="#">Internship form</a></li>
+                </ul></div>
+
+                <%--<asp:Menu ID="Menu1" runat="server" Height="51px" Width="234px">
+                    <DynamicItemTemplate>
+                        <%# Eval("Text") %>
+                    </DynamicItemTemplate>
+                    <Items>
+                        <asp:MenuItem Text="Student Internship" Value="Student Internship">
+                            <asp:MenuItem NavigateUrl="~/WebForm3.aspx" Text="Student Form" Value="Student Form"></asp:MenuItem>
+                            <asp:MenuItem Text="Company Form" Value="Company Form" NavigateUrl="~/Company.aspx"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Internship Form" Value="Internship Form"></asp:MenuItem>
+                    </Items>
+                    <StaticItemTemplate>
+                        <%# Eval("Text") %>
+                    </StaticItemTemplate>
+                </asp:Menu>--%>
+            </header>
+       
+        <div id="content">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+            </div> <!---Content--->
+            <footer></footer>
+          </div>
+    </form>
+</body>
+</html>
